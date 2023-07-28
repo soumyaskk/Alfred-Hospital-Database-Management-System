@@ -1,0 +1,60 @@
+﻿@model AlfredHospital.Models.ViewModels.RoomVM
+
+<form method="post" asp-action="InsertUpdate">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">@(Model.Room.Id!=0?"Update": "Create") Room</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		
+		<div class="mb-3">
+			<label asp-for="Room.RoomType"></label>
+			<input asp-for="Room.RoomType" class="form-control" />
+			<span asp-validation-for="Room.RoomType" class="text-danger"></span>
+
+		</div>
+		<div class="mb-3">
+			<label asp-for="Room.Capacity"></label>
+			<input asp-for="Room.Capacity" class="form-control" />
+			<span asp-validation-for="Room.Capacity" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Room.Status"></label>
+			<input asp-for="Room.Status" class="form-control" />
+			<span asp-validation-for="Room.Status" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Room.NurseId"></label>
+			<select asp-for="Room.NurseId" asp-items="@Model.NurseList" class="form-select">
+			<option disabled selected> -- Select Nurse -- </option>
+			</select>
+			
+		</div>
+		
+
+<div class="col-12">
+	@if(Model.Room.Id!=0){
+
+		<button type="submit" class="btn btn-primary" style="width:200px">Update</button>
+		
+	}
+	else
+	{
+				<button type="submit" class="btn btn-primary" style="width:200px">Create</button>
+
+	}
+	<a asp-controller="Room" asp-action="Index" class="btn btn-secondary" style="width:150px">
+				Room List
+		</a>
+	</div>
+	</div>
+</form>
+
+@section Scripts
+	{
+	@{
+
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

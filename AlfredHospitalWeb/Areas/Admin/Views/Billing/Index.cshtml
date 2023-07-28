@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<partial name="_Notification" />
+
+<div class="=" container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary"> Billing List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Billing" asp-action="InsertUpdate" class="btn btn-primary">
+                <i class="bi bi-clipboard-plus"></i> &nbsp; Create New Billing
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+    <table id="tblDataBilling" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+
+                <th>
+                    Billing Counter Num
+                </th>
+                <th>
+                    Biller First Name
+                </th>
+                <th>
+                    Biller Last Name
+                </th>
+                <th>
+                    Billing Date
+                </th>
+                <th>
+                    Billing Amount
+                </th>
+                <th>
+                    Patient First Name
+                </th>
+                <th>
+                    Patient Last Name
+                </th>
+
+
+            </tr>
+        </thead>
+
+
+    </table>
+</div>
+
+@section Scripts{
+    <script src ="~/js/billing.js"></script>
+}

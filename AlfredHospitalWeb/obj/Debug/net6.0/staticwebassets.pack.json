@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AlfredHospitalWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AlfredHospitalWeb.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\css\\bootswatchTheme.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchTheme.css"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\css\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\homepage.css"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\images\\hospital.jpg",
+      "PackagePath": "staticwebassets\\images\\hospital.jpg"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\js\\appointment.js",
+      "PackagePath": "staticwebassets\\js\\appointment.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\js\\billing.js",
+      "PackagePath": "staticwebassets\\js\\billing.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\js\\room.js",
+      "PackagePath": "staticwebassets\\js\\room.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\CapstoneDatabaseLab\\AlfredHospital\\AlfredHospitalWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AlfredHospitalWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AlfredHospitalWeb.props",
+      "PackagePath": "build\\AlfredHospitalWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AlfredHospitalWeb.props",
+      "PackagePath": "buildMultiTargeting\\AlfredHospitalWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AlfredHospitalWeb.props",
+      "PackagePath": "buildTransitive\\AlfredHospitalWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

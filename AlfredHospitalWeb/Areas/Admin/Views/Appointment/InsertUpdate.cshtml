@@ -1,0 +1,76 @@
+﻿@model AlfredHospital.Models.ViewModels.AppointmentVM
+
+<form method="post" asp-action="InsertUpdate">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">@(Model.Appointment.Id!=0?"Update": "Create") Appointment</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		
+		<div class="mb-3">
+			<label asp-for="Appointment.AppointmentDate"></label>
+			<input asp-for="Appointment.AppointmentDate" class="form-control" />
+			<span asp-validation-for="Appointment.AppointmentDate" class="text-danger"></span>
+
+		</div>
+		<div class="mb-3">
+			<label asp-for="Appointment.Reason"></label>
+			<input asp-for="Appointment.Reason" class="form-control" />
+			<span asp-validation-for="Appointment.Reason" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Appointment.PatientId"></label>
+			<select asp-for="Appointment.PatientId" asp-items="@Model.PatientList" class="form-select">
+			<option disabled selected> -- Select Patient -- </option>
+			</select>
+			<span asp-validation-for="Appointment.PatientId" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Appointment.PhysicianId"></label>
+			<select asp-for="Appointment.PhysicianId" asp-items="@Model.PhysicianList" class="form-select">
+			<option disabled selected> -- Select Physician -- </option>
+			</select>
+			<span asp-validation-for="Appointment.PhysicianId" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Appointment.ReceptionistId"></label>
+			<select asp-for="Appointment.ReceptionistId" asp-items="@Model.ReceptionistList" class="form-select">
+			<option disabled selected> -- Select Receptionist -- </option>
+			</select>
+			<span asp-validation-for="Appointment.ReceptionistId" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Appointment.RoomId"></label>
+			<select asp-for="Appointment.RoomId" asp-items="@Model.RoomList" class="form-select">
+				<option disabled selected> -- Select Room -- </option>
+			</select>
+			<span asp-validation-for="Appointment.RoomId" class="text-danger"></span>
+		</div>
+
+<div class="col-12">
+	@if(Model.Appointment.Id!=0){
+
+		<button type="submit" class="btn btn-primary" style="width:200px">Update</button>
+		
+	}
+	else
+	{
+				<button type="submit" class="btn btn-primary" style="width:200px">Create</button>
+
+	}
+	<a asp-controller="Appointment" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Appointment List
+		</a>
+	</div>
+	</div>
+</form>
+
+@section Scripts
+	{
+	@{
+
+		<partial name="_ValidationScriptsPartial" />
+	}
+	
+}

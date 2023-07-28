@@ -1,0 +1,70 @@
+﻿@model AlfredHospital.Models.ViewModels.BillingVM
+
+<form method="post" asp-action="InsertUpdate">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">@(Model.Billing.Id != 0 ? "Update" : "Create") Billing</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		
+		<div class="mb-3">
+			<label asp-for="Billing.BillingCounter"></label>
+			<input asp-for="Billing.BillingCounter" class="form-control" />
+			<span asp-validation-for="Billing.BillingCounter" class="text-danger"></span>
+
+		</div>
+		<div class="mb-3">
+			<label asp-for="Billing.FirstName"></label>
+			<input asp-for="Billing.FirstName" class="form-control" />
+			<span asp-validation-for="Billing.FirstName" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Billing.LastName"></label>
+			<input asp-for="Billing.LastName" class="form-control" />
+			<span asp-validation-for="Billing.LastName" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Billing.BillingDate"></label>
+			<input asp-for="Billing.BillingDate" class="form-control" />
+			<span asp-validation-for="Billing.BillingDate" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Billing.BillingAmount"></label>
+			<input asp-for="Billing.BillingAmount" class="form-control" />
+			<span asp-validation-for="Billing.BillingAmount" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Billing.PatientId"></label>
+			<select asp-for="Billing.PatientId" asp-items="@Model.PatientList" class="form-select">
+			<option disabled selected> -- Select Patient -- </option>
+			</select>
+			<span asp-validation-for="Billing.PatientId" class="text-danger"></span>
+		</div>
+		
+<div class="col-12">
+	@if(Model.Billing.Id!=0){
+
+		<button type="submit" class="btn btn-primary" style="width:200px">Update</button>
+		
+	}
+	else
+	{
+				<button type="submit" class="btn btn-primary" style="width:200px">Create</button>
+
+	}
+	<a asp-controller="Appointment" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Appointment List
+		</a>
+	</div>
+	</div>
+</form>
+
+@section Scripts
+	{
+	@{
+
+		<partial name="_ValidationScriptsPartial" />
+	}
+}
